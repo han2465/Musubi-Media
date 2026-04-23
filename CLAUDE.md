@@ -92,8 +92,8 @@ musubi-site/
 
 ## 도메인
 
-- **musubimedia.com** (main)
-- **www.musubimedia.com** (redirect to main)
+- **musubimedia.net** (main)
+- **www.musubimedia.net** (redirect to main)
 
 ---
 
@@ -144,5 +144,8 @@ musubi-site/
 ✅ 홈페이지 v1 완성 (index.html)
 ✅ 제품 데이터 구조 (products.json)
 ✅ 공통 CSS + partials
-⏳ 제품 상세 페이지 미구현
-⏳ Hostinger 배포 안 됨 (설정 필요)
+✅ GitHub repo: han2465/Musubi-Media (private)
+✅ Hostinger Git 자동 배포 연결 (SSH Deploy Key)
+✅ musubimedia.net 라이브
+⏳ 제품 상세 페이지 미구현 (midtown-eats-pos.html, musubi-display.html)
+⏳ About / Contact 페이지 미구현
