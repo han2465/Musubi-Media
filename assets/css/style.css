@@ -6,7 +6,9 @@
   --ink:     #0A0A0A;
   --paper:   #FAF7F2;
   --sand:    #E8DFD0;
-  --aloha:   #00AD4B;
+  --brand:   #1E88E5;
+  --brand-light: #5AC8FA;
+  --aloha:   #1E88E5;  /* alias — legacy name kept for existing classes */
   --sunset:  #F5A623;
   --ocean:   #1E7FB0;
 }

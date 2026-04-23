@@ -1,10 +1,16 @@
 {
+  "categories": [
+    { "id": "platforms", "label": "Platforms / SaaS" },
+    { "id": "apps",      "label": "Apps" },
+    { "id": "services",  "label": "Services" }
+  ],
   "products": [
     {
       "slug": "midtown-eats-pos",
       "number": "01",
-      "category": "Food Court POS",
-      "accent": "aloha",
+      "category": "platforms",
+      "categoryLabel": "Food Court POS",
+      "accent": "brand",
       "theme": "dark",
       "name": "Midtown Eats",
       "tagline": "POS Platform",
@@ -20,8 +26,8 @@
       "status": "Currently piloting · Honolulu",
       "statusType": "active",
       "pricing": {
-        "starter": { "price": 1499, "vendors": "up to 7" },
-        "growth":  { "price": 3499, "vendors": "8-15" },
+        "starter":    { "price": 1499,    "vendors": "up to 7" },
+        "growth":     { "price": 3499,    "vendors": "8-15" },
         "enterprise": { "price": "7,999+", "vendors": "16+" }
       },
       "targetMarket": ["Food halls", "Food courts", "Mall operators", "Marketplace operators"]
@@ -29,7 +35,8 @@
     {
       "slug": "musubi-display",
       "number": "02",
-      "category": "Digital Signage",
+      "category": "platforms",
+      "categoryLabel": "Digital Signage",
       "accent": "sunset",
       "theme": "light",
       "name": "Musubi",
@@ -44,6 +51,55 @@
       "status": "In development",
       "statusType": "coming",
       "targetMarket": ["Independent restaurants", "Cafes", "Retail", "Local ad network members"]
+    },
+    {
+      "slug": "musubi-karaoke",
+      "number": "03",
+      "category": "apps",
+      "categoryLabel": "Mobile App",
+      "accent": "brand",
+      "theme": "brand",
+      "name": "Musubi",
+      "tagline": "Karaoke",
+      "description": "An Android and iOS remote-control app for Smart-KTV karaoke machines — Wi-Fi pairing with karaoke hardware, full playback control, in-room audio/video recording, and direct upload to YouTube and social platforms.",
+      "features": [
+        "Wi-Fi pairing with karaoke hardware (TCP/IP + UDP)",
+        "Full remote control and song queue management",
+        "Audio and video recording per song",
+        "One-tap upload to YouTube and Facebook",
+        "Multi-language UI",
+        "XOR-encrypted device protocol"
+      ],
+      "status": "Shipped · v1.3 Android",
+      "statusType": "shipped",
+      "platforms": ["Android", "iOS (in development)"],
+      "hardware": "Smart-KTV series karaoke machines"
+    },
+    {
+      "slug": "ad-network",
+      "number": "S1",
+      "category": "services",
+      "categoryLabel": "Advertising",
+      "accent": "brand",
+      "theme": "light",
+      "name": "Local",
+      "tagline": "Ad Network",
+      "description": "Run your campaign across our signage footprint — food halls, cafes, and retail venues across Oahu. Targeted by neighborhood and daypart, priced for local budgets.",
+      "status": "Accepting campaigns",
+      "statusType": "active"
+    },
+    {
+      "slug": "custom-development",
+      "number": "S2",
+      "category": "services",
+      "categoryLabel": "Custom Development",
+      "accent": "brand",
+      "theme": "light",
+      "name": "Custom",
+      "tagline": "Software & Hardware",
+      "description": "POS integrations, Clover app development, signage installs, and bespoke tooling for restaurants and retailers that need something built right — not retrofitted.",
+      "status": "Accepting projects",
+      "statusType": "active"
     }
   ]
 }
