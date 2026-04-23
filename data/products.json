@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "slug": "midtown-eats-pos",
+      "number": "01",
+      "category": "Food Court POS",
+      "accent": "aloha",
+      "theme": "dark",
+      "name": "Midtown Eats",
+      "tagline": "POS Platform",
+      "description": "A complete multi-vendor POS for food courts and food halls — unified kiosk ordering, vendor-tagged payment routing, central orderboard, and automatic vendor payouts. Built on Clover.",
+      "features": [
+        "Multi-vendor order routing with unified cart",
+        "Luxury hotel-style central orderboard",
+        "Automated daily vendor payouts",
+        "Campaign & giveaway management",
+        "Real-time reports per vendor",
+        "Kiosk self-ordering with split tender"
+      ],
+      "status": "Currently piloting · Honolulu",
+      "statusType": "active",
+      "pricing": {
+        "starter": { "price": 1499, "vendors": "up to 7" },
+        "growth":  { "price": 3499, "vendors": "8-15" },
+        "enterprise": { "price": "7,999+", "vendors": "16+" }
+      },
+      "targetMarket": ["Food halls", "Food courts", "Mall operators", "Marketplace operators"]
+    },
+    {
+      "slug": "musubi-display",
+      "number": "02",
+      "category": "Digital Signage",
+      "accent": "sunset",
+      "theme": "light",
+      "name": "Musubi",
+      "tagline": "Display Network",
+      "description": "A first-party digital signage platform for Hawaii businesses — menu boards, promotional displays, and a local advertising network for restaurants, cafes, and retail locations.",
+      "features": [
+        "Drag-and-drop content scheduling",
+        "Template library for menus & promos",
+        "Fire TV / Chromecast / iPad ready",
+        "Cross-venue ad network (local businesses)"
+      ],
+      "status": "In development",
+      "statusType": "coming",
+      "targetMarket": ["Independent restaurants", "Cafes", "Retail", "Local ad network members"]
+    }
+  ]
+}

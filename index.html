@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Musubi Media — Technology for Hawaii's Food Industry</title>
+  <meta name="description" content="Musubi Media builds modern POS, digital signage, and marketing technology for Hawaii's restaurants, food halls, and independent operators." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          },
+          colors: {
+            ink: '#0A0A0A',
+            paper: '#FAF7F2',
+            sand: '#E8DFD0',
+            aloha: '#00AD4B',
+            sunset: '#F5A623',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+    .serif { font-family: 'Playfair Display', serif; }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: opacity .8s, transform .8s; }
+    .fade-up.in { opacity: 1; transform: none; }
+  </style>
+</head>
+<body class="bg-paper text-ink">
+
+  <!-- Nav -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-paper/80 backdrop-blur-md border-b border-ink/5">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="#" class="flex items-center gap-2">
+        <span class="serif italic text-2xl tracking-tight">Musubi<span class="text-aloha">.</span></span>
+        <span class="hidden sm:inline text-xs uppercase tracking-[0.3em] text-ink/50 font-medium">Media</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#products" class="hover:text-aloha transition-colors">Products</a>
+        <a href="#about"    class="hover:text-aloha transition-colors">About</a>
+        <a href="#contact"  class="hover:text-aloha transition-colors">Contact</a>
+        <a href="mailto:anthony@musubimedia.com" class="bg-ink text-paper px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider hover:bg-aloha transition-colors">
+          Get in touch
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-40 pb-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex items-center gap-3 mb-8">
+        <span class="inline-block w-12 h-[1px] bg-aloha"></span>
+        <span class="text-[11px] uppercase tracking-[0.4em] text-ink/60 font-medium">Honolulu · Hawaii</span>
+      </div>
+      <h1 class="serif text-5xl md:text-7xl leading-[1.05] max-w-4xl">
+        Modern technology for
+        <em class="italic text-aloha">Hawaii's</em>
+        <br class="hidden md:block" />
+        food industry.
+      </h1>
+      <p class="mt-8 text-lg md:text-xl text-ink/70 max-w-2xl leading-relaxed font-light">
+        We build POS, digital signage, and operational tooling designed for the way Hawaii's
+        restaurants and food halls actually work — independent, multi-vendor, and proudly local.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#products" class="bg-ink text-paper px-6 py-3 rounded-full text-sm font-semibold hover:bg-aloha transition-colors">
+          See our products
+        </a>
+        <a href="mailto:anthony@musubimedia.com" class="px-6 py-3 rounded-full text-sm font-semibold border border-ink/15 hover:border-ink transition-colors">
+          Contact us →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider accent -->
+  <section class="px-6">
+    <div class="max-w-6xl mx-auto border-t border-ink/10"></div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="inline-block w-10 h-[1px] bg-aloha"></span>
+        <span class="text-[11px] uppercase tracking-[0.4em] text-ink/60 font-medium">Products</span>
+      </div>
+      <h2 class="serif text-4xl md:text-5xl max-w-3xl leading-tight">
+        Purpose-built software for <em class="italic">local operators</em>.
+      </h2>
+
+      <div class="mt-16 grid md:grid-cols-2 gap-8">
+
+        <!-- Product Card: Midtown Eats POS -->
+        <article class="bg-ink text-paper rounded-3xl p-10 relative overflow-hidden group">
+          <div class="absolute top-6 right-6 text-[10px] uppercase tracking-[0.3em] text-paper/50">Product 01</div>
+          <div class="flex items-center gap-2 mb-6">
+            <span class="inline-block w-2 h-2 rounded-full bg-aloha"></span>
+            <span class="text-xs font-semibold uppercase tracking-wider">Food Court POS</span>
+          </div>
+          <h3 class="serif text-3xl leading-tight mb-4">
+            Midtown Eats<br/>
+            <span class="italic text-paper/70">POS Platform</span>
+          </h3>
+          <p class="text-paper/70 leading-relaxed mb-6">
+            A complete multi-vendor POS for food courts and food halls — unified kiosk ordering,
+            vendor-tagged payment routing, central orderboard, and automatic vendor payouts.
+            Built on Clover.
+          </p>
+          <ul class="space-y-2 text-sm text-paper/80 mb-8">
+            <li class="flex items-start gap-2">
+              <span class="text-aloha">→</span>
+              <span>Multi-vendor order routing with unified cart</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-aloha">→</span>
+              <span>Luxury hotel-style central orderboard</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-aloha">→</span>
+              <span>Automated daily vendor payouts</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-aloha">→</span>
+              <span>Campaign & giveaway management</span>
+            </li>
+          </ul>
+          <div class="text-xs uppercase tracking-wider text-paper/50">
+            Currently piloting · Honolulu
+          </div>
+        </article>
+
+        <!-- Product Card: Musubi Display Network -->
+        <article class="bg-sand rounded-3xl p-10 relative overflow-hidden">
+          <div class="absolute top-6 right-6 text-[10px] uppercase tracking-[0.3em] text-ink/40">Product 02</div>
+          <div class="flex items-center gap-2 mb-6">
+            <span class="inline-block w-2 h-2 rounded-full bg-sunset"></span>
+            <span class="text-xs font-semibold uppercase tracking-wider">Digital Signage</span>
+          </div>
+          <h3 class="serif text-3xl leading-tight mb-4">
+            Musubi<br/>
+            <span class="italic text-ink/60">Display Network</span>
+          </h3>
+          <p class="text-ink/70 leading-relaxed mb-6">
+            A first-party digital signage platform for Hawaii businesses — menu boards,
+            promotional displays, and a local advertising network for restaurants, cafes,
+            and retail locations.
+          </p>
+          <ul class="space-y-2 text-sm text-ink/70 mb-8">
+            <li class="flex items-start gap-2">
+              <span class="text-sunset">→</span>
+              <span>Drag-and-drop content scheduling</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-sunset">→</span>
+              <span>Template library for menus & promos</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-sunset">→</span>
+              <span>Fire TV / Chromecast / iPad ready</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-sunset">→</span>
+              <span>Cross-venue ad network (local businesses)</span>
+            </li>
+          </ul>
+          <div class="text-xs uppercase tracking-wider text-ink/40">
+            In development
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24 px-6 bg-ink text-paper">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="inline-block w-10 h-[1px] bg-aloha"></span>
+        <span class="text-[11px] uppercase tracking-[0.4em] text-paper/60 font-medium">About</span>
+      </div>
+      <h2 class="serif text-4xl md:text-5xl leading-tight mb-8">
+        We build for the operators <em class="italic">we work alongside</em>.
+      </h2>
+      <div class="grid md:grid-cols-2 gap-10 text-paper/75 leading-relaxed">
+        <p>
+          Musubi Media was founded by Anthony Han — restaurant owner (Soul Chicken), technologist, and Clover payment
+          partner based in Honolulu. After running Soul Chicken inside Midtown Eats food court and watching
+          vendors struggle with tools not designed for multi-operator environments, we started building
+          the platform we wished existed.
+        </p>
+        <p>
+          Our advantage is perspective: we're not a Silicon Valley software company selling to restaurants —
+          we ARE the operator. Every feature is tested against the real constraints of a busy Hawaii kitchen,
+          tight vendor margins, and the specific patterns of local dining culture.
+        </p>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-6 text-sm">
+        <div class="border-l-2 border-aloha pl-4">
+          <div class="text-[10px] uppercase tracking-wider text-paper/50 mb-1">Location</div>
+          <div class="font-medium">Honolulu, Hawaii</div>
+        </div>
+        <div class="border-l-2 border-aloha pl-4">
+          <div class="text-[10px] uppercase tracking-wider text-paper/50 mb-1">Founded</div>
+          <div class="font-medium">2026</div>
+        </div>
+        <div class="border-l-2 border-aloha pl-4">
+          <div class="text-[10px] uppercase tracking-wider text-paper/50 mb-1">Focus</div>
+          <div class="font-medium">Restaurants · Food halls · Digital signage</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <span class="inline-block w-10 h-[1px] bg-aloha"></span>
+        <span class="text-[11px] uppercase tracking-[0.4em] text-ink/60 font-medium">Contact</span>
+        <span class="inline-block w-10 h-[1px] bg-aloha"></span>
+      </div>
+      <h2 class="serif text-4xl md:text-5xl leading-tight mb-8">
+        Let's talk about your <em class="italic">operation</em>.
+      </h2>
+      <p class="text-ink/70 max-w-xl mx-auto mb-10 leading-relaxed">
+        Food hall operator, multi-vendor mall, independent restaurant, or something in between —
+        we'd love to hear how you run your kitchen and where the friction is today.
+      </p>
+      <a href="mailto:anthony@musubimedia.com" class="inline-flex items-center gap-2 bg-ink text-paper px-8 py-4 rounded-full font-semibold hover:bg-aloha transition-colors">
+        anthony@musubimedia.com
+        <span>→</span>
+      </a>
+      <div class="mt-6 text-sm text-ink/50">
+        or text us directly — <span class="font-mono">808.XXX.XXXX</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-ink/10 py-10 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-ink/50">
+      <div class="serif italic text-lg text-ink">Musubi<span class="text-aloha">.</span> Media</div>
+      <div class="text-xs uppercase tracking-wider">© 2026 Musubi Media LLC · Made in Hawaii</div>
+    </div>
+  </footer>
+
+  <script>
+    // fade-up on scroll
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) if (e.isIntersecting) e.target.classList.add('in');
+    }, { threshold: 0.1 });
+    document.querySelectorAll('h1, h2, article, p').forEach(el => {
+      el.classList.add('fade-up');
+      io.observe(el);
+    });
+  </script>
+
+</body>
+</html>
